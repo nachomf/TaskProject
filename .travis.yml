@@ -22,5 +22,5 @@ deploy:
   file: "${TRAVIS_BRANCH}-${TRAVIS_SMALLTALK_VERSION}.zip"
   skip_cleanup: true
   on:
-    repo: TaskProject
+    repo: ba-st/TaskProject
     tags: true
