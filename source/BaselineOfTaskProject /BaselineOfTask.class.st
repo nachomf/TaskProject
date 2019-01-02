@@ -13,6 +13,7 @@ BaselineOfTask >> baseline: spec [
 		for: #common
 		do: [ 
 			spec
-				package: #'Task-Model';
-				package: #'Task-Tests' with: [ spec requires: #('Task-Model') ]].
+				package: 'BaselineOfTaskProject';
+				package: 'Task-Model';
+				package: 'Task-Tests' with: [ spec requires: #('Task-Model') ]].
 ]
