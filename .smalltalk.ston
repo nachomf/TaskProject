@@ -4,7 +4,7 @@ SmalltalkCISpec {
       #baseline : 'TaskProject',
       #load : [ 'Development' ],
       #platforms : [  #pharo ],
-      #repository : https://github.com/nachomf/TaskProject.git
+      #directory : 'source',
       #version : '1.0.0'
     }
   ],
