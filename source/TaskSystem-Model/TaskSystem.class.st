@@ -20,8 +20,20 @@ TaskSystem >> initialize [
 	tasks := OrderedCollection new
 ]
 
+{ #category : #processing }
+TaskSystem >> removeTask: aTask [ 
+
+	tasks remove: aTask
+]
+
 { #category : #accessing }
 TaskSystem >> tasks [
 
 	^ tasks
+]
+
+{ #category : #processing }
+TaskSystem >> updateTask: anOldTask with: aNewTask [ 
+	
+	(tasks detect: [ :task | task == anOldTask]) synchronizeContentWith: aNewTask 
 ]

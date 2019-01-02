@@ -15,5 +15,7 @@ BaselineOfTask >> baseline: spec [
 			spec
 				package: 'BaselineOfTaskProject';
 				package: 'Task-Model';
-				package: 'Task-Tests' with: [ spec requires: #('Task-Model') ]].
+				package: 'Task-Tests' with: [ spec requires: #('Task-Model') ];
+				package: 'TaskSystem-Model';
+				package: 'TaskSystem-Tests' with: [ spec requires: #('TaskSystem-Model') ]].
 ]
