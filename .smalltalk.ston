@@ -2,14 +2,15 @@ SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
       #baseline : 'TaskProject',
-      #directory : 'source',
       #load : [ 'Development' ],
-      #platforms : [  #pharo ]
+      #platforms : [  #pharo ],
+      #repository : https://github.com/nachomf/TaskProject.git
+      #version : '1.0.0'
     }
   ],
   #testing : {
     #coverage : {
-       #packages : [ 'TaskProject*' ]
+       #packages : [ 'Task*' ]
     }
   }
 }
