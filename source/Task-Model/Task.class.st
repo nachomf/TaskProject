@@ -27,6 +27,14 @@ Task >> initializeNamed: aTitle describedBy: aDescription [
 	description := aDescription
 ]
 
+{ #category : #synchronization }
+Task >> synchronizeContentWith: aTask [ 
+	
+	title := aTask title.
+	description := aTask description.
+	
+]
+
 { #category : #accessing }
 Task >> title [
 
