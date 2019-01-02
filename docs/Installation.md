@@ -2,28 +2,28 @@
 
 ## Basic Installation
 
-You can load **toDo Application** evaluating:
+You can load **TaskProject Application** evaluating:
 ```smalltalk
 Metacello new
-	baseline: 'toDo';
-	repository: 'github://nachomf/toDo:master/source';
+	baseline: 'TaskProject';
+	repository: 'github://nachomf/TaskProject:master/source';
 	load.
 ```
 >  Change `master` to some released version if you want a pinned version
 
 ## Using as dependency
 
-In order to include **toDo Application** as part of your project, you should reference the package in your product baseline:
+In order to include **TaskProject Application** as part of your project, you should reference the package in your product baseline:
 
 ```smalltalk
 setUpDependencies: spec
 
 	spec
-		baseline: 'toDo'
+		baseline: 'TaskProject'
 			with: [ spec
-				repository: 'github://nachomf/toDo:v{XX}/source';
+				repository: 'github://nachomf/TaskProject:v{XX}/source';
 				loads: #('Deployment') ];
-		import: 'toDo'.
+		import: 'TaskProject'.
 ```
 > Replace `{XX}` with the version you want to depend on
 
@@ -34,5 +34,5 @@ baseline: spec
 	spec
 		for: #common
 		do: [ self setUpDependencies: spec.
-			spec package: 'My-Package' with: [ spec requires: #('toDo') ] ]
+			spec package: 'My-Package' with: [ spec requires: #('TaskProject') ] ]
 ```
