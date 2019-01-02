@@ -1,11 +1,11 @@
 Class {
-	#name : #BaselineOfTask,
+	#name : #BaselineOfTaskProject,
 	#superclass : #BaselineOf,
 	#category : #'BaselineOfTaskProject '
 }
 
 { #category : #baselines }
-BaselineOfTask >> baseline: spec [
+BaselineOfTaskProject >> baseline: spec [
 
 	<baseline>
 
