@@ -12,9 +12,9 @@ matrix:
   - smalltalk: Pharo-7.0
   fast_finish: true
 before_deploy:
-  - cp "${SMALLTALK_CI_IMAGE}" "toDo Application.image"
-  - cp "${SMALLTALK_CI_CHANGES}" "toDo Application.changes"
-  - zip -q "${TRAVIS_BRANCH}-${TRAVIS_SMALLTALK_VERSION}.zip" "toDo Application.image" "toDo Application.changes"
+  - cp "${SMALLTALK_CI_IMAGE}" "TaskProject Application.image"
+  - cp "${SMALLTALK_CI_CHANGES}" "TaskProject Application.changes"
+  - zip -q "${TRAVIS_BRANCH}-${TRAVIS_SMALLTALK_VERSION}.zip" "TaskProject Application.image" "TaskProject Application.changes"
 deploy:
   provider: releases
   api_key:
@@ -22,5 +22,5 @@ deploy:
   file: "${TRAVIS_BRANCH}-${TRAVIS_SMALLTALK_VERSION}.zip"
   skip_cleanup: true
   on:
-    repo: ba-st/toDo
+    repo: ba-st/TaskProject
     tags: true
