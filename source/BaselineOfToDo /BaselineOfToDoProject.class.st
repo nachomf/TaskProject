@@ -14,9 +14,5 @@ BaselineOfToDoProject >> baseline: spec [
 		do: [ 
 			spec
 				package: #'ToDo';
-				package: #'ToDo-Tests' with: [ spec requires: #('ToDo') ].
-			spec
-				group: 'default' with: #('core' 'tests');
-				group: 'core' with: #('ToDo');
-				group: 'tests' with: #('ToDo-Tests') ].
+				package: #'ToDo-Tests' with: [ spec requires: #('ToDo') ]].
 ]
