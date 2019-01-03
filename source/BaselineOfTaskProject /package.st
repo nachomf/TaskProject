@@ -1,1 +1,1 @@
-Package { #name : #'BaselineOfTaskProject ' }
+Package { #name : #'BaselineOfTaskProject' }
