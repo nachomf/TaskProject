@@ -2,7 +2,6 @@ SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
       #baseline : 'TaskProject',
-      #load : [ 'Development' ],
       #platforms : [  #pharo ],
       #directory : 'source',
       #version : '1.0.0'
