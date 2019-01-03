@@ -1,7 +1,7 @@
 Class {
 	#name : #BaselineOfTaskProject,
 	#superclass : #BaselineOf,
-	#category : #'BaselineOfTaskProject '
+	#category : #'BaselineOfTaskProject'
 }
 
 { #category : #baselines }
